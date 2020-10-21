@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+
+.nav {
+  width: 366px;
+  height: 100vh;
+  background-color: darkgrey;
+  float: left;
+  padding-top: 10%;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+  background-color: darkolivegreen;
+  /* top: 15%; */
+  margin: auto;
+  background-image: url("https://i.kfs.io/album/global/74000842,0v1/fit/500x500.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#linkarea {
+  margin-top: 40%;
+  margin: 10% auto;
+}
+.link {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+.area {
+  width: calc(100% - 366px);
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+.img {
+  width: 970px;
+  height: 570px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block {
+  display: inline-block;
+  /* 兩個 inline-block 中間會有 4px 的空白 */
+  width: 320px;
+  height: 570px;
+  background-color: darkslategray;
+}
+.block2area {
+  float: right;
+}
+
+.block2 {
+  display: inline-block;
+  /* 兩個 inline-block 中間會有 4px 的空白 */
+  width: 320px;
+  height: 570px;
+  background-color: darkslategray;
+}
+#img1 {
+  display: inline-block;
+  /* 兩個 inline-block 中間會有 4px 的空白 */
+  width: 320px;
+  height: 570px;
+  background-color: darkslategray;
+  margin-right: 1px;
+  background-image: url("https://i.pinimg.com/originals/5a/03/aa/5a03aa37ab8d8672d10cc56ca7a0c44c.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#img2 {
+  margin-right: 1px;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/51N+0bihAKL.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#img3 {
+  background-image: url("https://media1.tenor.com/images/d46c897e979f2cc6b9764bee26c665a6/tenor.gif?itemid=16181871");
+  background-size: cover;
+  background-position: center;
+}
+#mask {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+#mask:hover {
+  opacity: 0;
+  transition: 0.7s;
+}
+@media (max-width: 1350px) {
+  .nav {
+    width: 366px;
+    height: 100vh;
+    background-color: darkgrey;
+    float: left;
+    padding-top: 10%;
+  }
+  #logo {
+    width: 150px;
+    height: 150px;
+    background-color: darkolivegreen;
+    margin: auto;
+    background-image: url("https://i.kfs.io/album/global/74000842,0v1/fit/500x500.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #linkarea {
+    margin-top: 40%;
+    margin: 10% auto;
+  }
+  .link {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  .area {
+    width: calc(100% - 366px);
+    height: 100vh;
+    float: left;
+    position: relative;
+  }
+  .img {
+    width: 768px;
+    height: 575px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .block1 {
+    display: inline-block;
+    /* 兩個 inline-block 中間會有 4px 的空白 */
+    width: 100%;
+    height: calc(50% - 2.5px);
+    background-color: darkslategray;
+  }
+
+  #img1 {
+    width: 100%;
+    height: calc(50% - 2.5px);
+    margin-right: 1px;
+    background-image: url("https://media1.tenor.com/images/d46c897e979f2cc6b9764bee26c665a6/tenor.gif?itemid=16181871");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .block2area {
+    width: 100%;
+    height: calc(50% - 2.5px);
+  }
+  .block2 {
+    display: inline-block;
+    width: calc(50% - 2.5px);
+    height: 100%;
+  }
+  #img2 {
+    margin-right: 1px;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/51N+0bihAKL.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #img3 {
+    background-image: url("https://i.pinimg.com/originals/5a/03/aa/5a03aa37ab8d8672d10cc56ca7a0c44c.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+@media (max-width: 1134px) {
+  .nav {
+    width: 100vw;
+    height: 100px;
+    background-color: darkgrey;
+    padding: 10px 5%;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+    background-color: darkolivegreen;
+    background-image: url("https://i.kfs.io/album/global/74000842,0v1/fit/500x500.jpg");
+    background-position: center;
+    background-size: cover;
+    float: left;
+  }
+  #linkarea {
+    float: right;
+    margin-top: 28px;
+  }
+  .link {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .area {
+    width: 100vw;
+    height: calc(135vw - 100px);
+    position: relative;
+  }
+  .img {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .block1 {
+    display: inline-block;
+    /* 兩個 inline-block 中間會有 4px 的空白 */
+    width: 100%;
+    height: calc(50% - 2.5px);
+  }
+
+  #img1 {
+    margin-right: 1px;
+    background-color: black;
+    background-image: url("https://media1.tenor.com/images/d46c897e979f2cc6b9764bee26c665a6/tenor.gif?itemid=16181871");
+    background-position: center;
+    background-size: cover;
+  }
+  #block2area {
+    height: 100%;
+  }
+  .block2 {
+    display: inline-block;
+    width: calc(50% - 2.5px);
+  }
+  #img2 {
+    margin-right: 1px;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/51N+0bihAKL.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  #img3 {
+    background-image: url("https://i.pinimg.com/originals/5a/03/aa/5a03aa37ab8d8672d10cc56ca7a0c44c.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+@media (max-width: 600px) {
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    width: 100vw;
+    height: 80px;
+    background-color: darkgrey;
+    position: fixed;
+    z-index: 99;
+  }
+  #linkbtn {
+    width: 40px;
+    height: 50px;
+    background-color: darkcyan;
+    position: absolute;
+    border-radius: 5px;
+    opacity: 0.7;
+    left: 10%;
+    top: calc(50% - 25px);
+  }
+  .link {
+    display: none;
+  }
+  #logo {
+    width: 54px;
+    height: 54px;
+    background-color: darkolivegreen;
+    background-image: url("https://i.kfs.io/album/global/74000842,0v1/fit/500x500.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .area {
+    width: 100vw;
+    height: auto;
+  }
+  .img {
+    width: 100vw;
+  }
+
+  #img1 {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+
+    background-image: url("https://media1.tenor.com/images/d46c897e979f2cc6b9764bee26c665a6/tenor.gif?itemid=16181871");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #img2 {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("https://cdn.vox-cdn.com/thumbor/aagAf0fazWuoOU1-GfxNBYJiONA=/0x28:1280x698/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19399918/baby_yoda_song__1196588_1280x0.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  #img3 {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("https://i.pinimg.com/originals/5a/03/aa/5a03aa37ab8d8672d10cc56ca7a0c44c.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+ 
+}

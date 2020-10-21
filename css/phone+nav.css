@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration:none;
+    display: block;
+    font-size: 24px;
+    color: white;  
+}
+
+
+
+.nav{
+    width: 100vw;
+    height: 80px;
+    background-color: darkgrey;
+    padding: 14px 5%;
+    position: fixed;
+    z-index: 99;
+    
+   
+}
+#linkarea{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    width: 40px;
+    height: 50px;
+    background-color: darkcyan;
+    float: left;
+    border-radius: 5px;
+    opacity: 0.9;
+    
+}
+#linkarea ul{
+    text-align: left;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    background-color: cadetblue;
+    top: 80%;
+    border-radius: 5%;
+    padding: 10px 20px 10px 10px;
+    left: -50%;
+    transition: 1s;
+    
+}
+
+
+
+#linkarea:hover{
+    background-color: cadetblue;
+    
+
+}
+#linkarea:hover>ul{
+    left: 0;
+    
+    
+}
+
+
+
+
+
+#logo{
+    width: 54px;
+    height: 54px;
+    background-color: darkolivegreen;
+    background-image: url('https://i.kfs.io/album/global/74000842,0v1/fit/500x500.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    
+}
+
+#imgarea{
+    width: 100vw;
+    height: auto;
+    background-color: aqua;
+}
+
+.block1{
+    /* 兩個 inline-block 中間會有 4px 的空白 */
+    width: 100vw;
+    height: 50vh;
+    background-color: darkslategray;
+
+     
+}
+.block2{
+    /* 兩個 inline-block 中間會有 4px 的空白 */
+    width: 100vw;
+    height: 50vh;
+    background-color: darkslategray;
+
+     
+}
+
+
+#img1{        
+   
+   
+   background-image: url('https://media1.tenor.com/images/d46c897e979f2cc6b9764bee26c665a6/tenor.gif?itemid=16181871');
+   background-position: center;
+   background-size: cover;
+    
+}
+
+#img2{
+    
+    background-image: url('https://cdn.vox-cdn.com/thumbor/aagAf0fazWuoOU1-GfxNBYJiONA=/0x28:1280x698/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19399918/baby_yoda_song__1196588_1280x0.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+}
+#img3{
+    background-image: url('https://i.pinimg.com/originals/5a/03/aa/5a03aa37ab8d8672d10cc56ca7a0c44c.jpg');
+    background-size: cover;
+    background-position: top;
+    
+}
+#mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+#mask:hover{
+    opacity: 0;
+    transition: 0.7s;
+
+}
